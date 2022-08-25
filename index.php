@@ -15,55 +15,50 @@
         <img class="width-image-header" src="img/Spotify_logo_without_text.svg.png" alt="">
     </div> 
 </header>
-
+<?php 
+    $discList=[
+        [
+            'poster'=>'https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg',
+            'title'=>'New Jersey',
+            'author'=> 'Bon Jovi',
+            'genre'=>'Rock',
+            'year'=>'1988'
+        ],
+        [
+            'poster'=>'https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg',
+            'title'=>'New Jersey',
+            'author'=> 'Bon Jovi',
+            'genre'=>'Rock',
+            'year'=>'1988'
+        ],
+        [
+            'poster'=>'https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg',
+            'title'=>'New Jersey',
+            'author'=> 'Bon Jovi',
+            'genre'=>'Rock',
+            'year'=>'1988'
+        ],
+    ]
+?>
 <main>
     <div class="main-background">
         <div class="row col-8 mx-auto pt-5">
             <div class="p-0 d-flex flex-wrap justify-content-between">
-                <div class="card-size p-3 bg-card my-2 text-white">
-                    <div>
-                        <img class="card-img" :src="disc.poster" alt="non trovato">
+                <?php foreach ($discList as $disc){ ?>
+                    <div class="card-size p-3 bg-card my-2 text-white">
+                        <div>
+                            <?php echo "<img class='card-img' src='$disc["poster"]' alt='non trovato'>" ;?>
+                        </div>
+                    
+                        <div class="text-center pt-2">
+                            <h4><?php echo $disc["title"] ?> </h4>
+                            <span class="pt-1 text-class"><?php echo $disc["author"] ?></span>
+                            <p class="text-class"><?php echo $disc["year"] ?></p>
+                        </div>
                     </div>
+
+                <?php } ?>
                 
-                    <div class="text-center pt-2">
-                        <h4>{{disc.title}}</h4>
-                        <span class="pt-1 text-class">{{disc.author}}</span>
-                        <p class="text-class">{{disc.year}}</p>
-                    </div>
-                </div>
-                <div class="card-size p-3 bg-card my-2 text-white">
-                    <div>
-                        <img class="card-img" :src="disc.poster" alt="non trovato">
-                    </div>
-                
-                    <div class="text-center pt-2">
-                        <h4>{{disc.title}}</h4>
-                        <span class="pt-1 text-class">{{disc.author}}</span>
-                        <p class="text-class">{{disc.year}}</p>
-                    </div>
-                </div>
-                <div class="card-size p-3 bg-card my-2 text-white">
-                    <div>
-                        <img class="card-img" :src="disc.poster" alt="non trovato">
-                    </div>
-                
-                    <div class="text-center pt-2">
-                        <h4>{{disc.title}}</h4>
-                        <span class="pt-1 text-class">{{disc.author}}</span>
-                        <p class="text-class">{{disc.year}}</p>
-                    </div>
-                </div>
-                <div class="card-size p-3 bg-card my-2 text-white">
-                    <div>
-                        <img class="card-img" :src="disc.poster" alt="non trovato">
-                    </div>
-                
-                    <div class="text-center pt-2">
-                        <h4>{{disc.title}}</h4>
-                        <span class="pt-1 text-class">{{disc.author}}</span>
-                        <p class="text-class">{{disc.year}}</p>
-                    </div>
-                </div>
             </div>
             
         </div>
