@@ -10,7 +10,12 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-        
+<header>
+    <div class="nav">
+        <img class="width-image-header" src="img/Spotify_logo_without_text.svg.png" alt="">
+    </div> 
+</header>
+
 
 </body>
 </html>
