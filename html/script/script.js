@@ -1,7 +1,11 @@
 var app = new Vue({
     el: '#app',
     data: {
-      discs:[]
+      discs:[],
+      key:'Pop',
+      newDisc:[]
+      
+
     },
     methods: {
         getCards(){
@@ -11,8 +15,12 @@ var app = new Vue({
             });
         },
 
-        onChange() {
-            console.log(1);
+        onChange(e) {
+            axios.get('http://localhost:81/php-ajax-dischi/controller.php')
+            .then((result)=>{
+                this.newDisc = result.data.filter((res)=>res.genre===this.key);
+                console.log(this.newDisc);
+            });
         }
     },
 
