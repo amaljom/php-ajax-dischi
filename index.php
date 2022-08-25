@@ -19,6 +19,52 @@
 <main>
     <div class="main-background">
         <div class="row col-8 mx-auto pt-5">
+            <div class="p-0 d-flex flex-wrap justify-content-between">
+                <div class="card-size p-3 bg-card my-2 text-white">
+                    <div>
+                        <img class="card-img" :src="disc.poster" alt="non trovato">
+                    </div>
+                
+                    <div class="text-center pt-2">
+                        <h4>{{disc.title}}</h4>
+                        <span class="pt-1 text-class">{{disc.author}}</span>
+                        <p class="text-class">{{disc.year}}</p>
+                    </div>
+                </div>
+                <div class="card-size p-3 bg-card my-2 text-white">
+                    <div>
+                        <img class="card-img" :src="disc.poster" alt="non trovato">
+                    </div>
+                
+                    <div class="text-center pt-2">
+                        <h4>{{disc.title}}</h4>
+                        <span class="pt-1 text-class">{{disc.author}}</span>
+                        <p class="text-class">{{disc.year}}</p>
+                    </div>
+                </div>
+                <div class="card-size p-3 bg-card my-2 text-white">
+                    <div>
+                        <img class="card-img" :src="disc.poster" alt="non trovato">
+                    </div>
+                
+                    <div class="text-center pt-2">
+                        <h4>{{disc.title}}</h4>
+                        <span class="pt-1 text-class">{{disc.author}}</span>
+                        <p class="text-class">{{disc.year}}</p>
+                    </div>
+                </div>
+                <div class="card-size p-3 bg-card my-2 text-white">
+                    <div>
+                        <img class="card-img" :src="disc.poster" alt="non trovato">
+                    </div>
+                
+                    <div class="text-center pt-2">
+                        <h4>{{disc.title}}</h4>
+                        <span class="pt-1 text-class">{{disc.author}}</span>
+                        <p class="text-class">{{disc.year}}</p>
+                    </div>
+                </div>
+            </div>
             
         </div>
     </div>
