@@ -36,7 +36,17 @@
                         </div>  
                     </div>
                 </div>
+                <div class="col-6 mx-auto">
+                    <select class="form-select" aria-label="Default select example" @input="onChange(option)"> 
+                        <option value="">mostra tutti</option>
+                        <option value="1">Pop</option>
+                        <option value="2">Rock</option>
+                        <option value="3">Metal</option>
+                        <option value="4">Jazz</option>
+                    </select>
+                </div>
             </div>
+            
         </main>
     </div>
     <script src="./script/script.js"></script>
