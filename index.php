@@ -16,6 +16,13 @@
     </div> 
 </header>
 
+<main>
+    <div class="main-background">
+        <div class="row col-8 mx-auto pt-5">
+            
+        </div>
+    </div>
+</main>
 
 </body>
 </html>
