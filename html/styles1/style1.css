@@ -34,3 +34,6 @@
     background-color:#2e3a46;
     width: calc(100% / 5 - 30px);
 }
+.img-cont{
+    width: 170px;
+}
