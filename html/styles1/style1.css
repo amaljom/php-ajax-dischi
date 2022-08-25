@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* * HEADER */
+.width-image-header{
+    width: 55px;
+    margin: 15px;
+    padding-left: 5px;
+}
+.nav{
+    
+    background-color: #2e3a46;
+}
+
+.main-background{
+    height: calc( 100vh);
+    background-color: #1E2D3B;
+}
+.card-img{
+    width: 100%;
+}
+.card-size{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.text-class{
+    font-size: 0.85rem;
+    color: grey
+}
+.bg-card{
+    background-color:#2e3a46;
+    width: calc(100% / 5 - 30px);
+}
